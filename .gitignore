@@ -5,4 +5,4 @@ daemon
 Include
 Lib
 Scripts
-.bat
+run_script.bat
