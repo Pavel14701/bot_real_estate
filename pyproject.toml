@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bot-real-estate"
+version = "0.1.0"
+description = "bot for real estate price checking"
+authors = ["Pavel14701 <pavelkutia@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlalchemy = "^2.0.35"
+pytelegrambotapi = "^4.23.0"
+schedule = "^1.2.2"
+g4f = "^0.3.2.9"
+pandas = "^2.2.3"
+psycopg2 = "^2.9.9"
+matplotlib = "^3.9.2"
+python-dotenv = "^1.0.1"
+redis = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

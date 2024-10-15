@@ -1,5 +1,7 @@
-from sqlalchemy import create_engine, Column, Integer, String, text, DateTime, Boolean, Float, event
+from sqlalchemy import create_engine, Column, Integer, String, text, DateTime, Boolean, Float
 from sqlalchemy.orm import declarative_base, sessionmaker
+import os
+from dotenv import load_dotenv
 
 Base = declarative_base()
 
@@ -69,20 +71,5 @@ class User(Base):
         self.nick2 = nick2
         self.messages = 0
         self.active = True 
-
-
-class CacUserData(Base):
-    __tablename__ = "cac_userdata"
-    user_id = Column(Integer, primary_key=True)
-    chosen_region_name = Column(String)
-    chosen_street_name = Column(String)
-    house_info1 = Column(String)
-    house_info2 = Column(String)
-    number_of_rooms = Column(Integer)
-    cac_age = Column(Integer)
-    area = Column(Float)
-    price_of_finishing = Column(String)
-    repair_coef = Column(Float)
-    furniture_cost = Column(Integer)
 
 

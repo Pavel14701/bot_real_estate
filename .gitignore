@@ -6,3 +6,6 @@ Include
 Lib
 Scripts
 run_script.bat
+*.db
+.csv
+.venv
